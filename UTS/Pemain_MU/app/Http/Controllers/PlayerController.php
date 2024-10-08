@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PlayerController extends Controller
 {
-    public function main() {
+    public function index() {
         $players = player::all();
 
         return view('index', compact('players'));
